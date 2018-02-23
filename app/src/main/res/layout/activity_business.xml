@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.androide.citycleaner.BusinessActivity">
+
+    <Button
+        android:id="@+id/homeButtonBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/singInButtonBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/homeButtonBusiness"
+        android:layout_toEndOf="@+id/homeButtonBusiness"
+        android:layout_toRightOf="@+id/homeButtonBusiness"
+        android:text="Sing in" />
+
+    <Button
+        android:id="@+id/signUpButtonBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/singInButtonBusiness"
+        android:layout_toRightOf="@+id/singInButtonBusiness"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/aboutButtonBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/signUpButtonBusiness"
+        android:layout_toEndOf="@+id/signUpButtonBusiness" />
+    <ImageView
+        android:id="@+id/imageViewBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.example.androide.citycleaner.RequestTogovt_IndividualActivity">
+
+    <TextView
+        android:id="@+id/govt_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Government Notifications" />
+
+    <ImageView
+        android:layout_below="@+id/govt_notification"
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/image" />
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/notification_1"
+        android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_logo"
+        android:layout_marginLeft="10dp"
+        android:text="Notification - 1" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/notification_2"
+        android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_1"
+        android:layout_marginLeft="10dp"
+        android:text="Notification - 2" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/notification_3"
+        android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_2"
+        android:layout_marginLeft="10dp"
+        android:text="Notification - 3" />
+
+</RelativeLayout>

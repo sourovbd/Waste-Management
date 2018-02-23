@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androide.citycleaner.SignIn_individual">
+
+    <Button
+        android:id="@+id/homeButtonIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Home"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/singInButtonIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/homeButtonIndividual"
+        android:layout_toEndOf="@+id/homeButtonIndividual"
+        android:layout_toRightOf="@+id/homeButtonIndividual"
+        android:text="Sing in" />
+
+    <Button
+        android:id="@+id/signUpButtonIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/singInButtonIndividual"
+        android:layout_toRightOf="@+id/singInButtonIndividual"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/aboutButtonIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/signUpButtonIndividual"
+        android:layout_toEndOf="@+id/signUpButtonIndividual" />
+    <ImageView
+        android:id="@+id/imageViewSignInIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image"
+        android:layout_below="@+id/homeButtonIndividual"
+        android:layout_alignLeft="@+id/homeButtonIndividual"
+        android:layout_alignStart="@+id/homeButtonIndividual"
+        android:layout_above="@+id/emailMobIndividual" />
+
+    <EditText
+        android:id="@+id/emailMobIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="203dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email or Mobile no" />
+
+    <EditText
+        android:id="@+id/passwordIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailMobIndividual"
+        android:layout_alignStart="@+id/emailMobIndividual"
+        android:layout_alignTop="@+id/emailMobIndividual"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signInIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordIndividual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="OnLogin"
+        android:text="Sign In" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTextIndividual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signInIndividual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="forgot password?" />
+</RelativeLayout>

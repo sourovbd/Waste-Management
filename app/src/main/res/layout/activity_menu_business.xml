@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androide.citycleaner.Menu_business">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:text="Request to government"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="183dp"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/image"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:text="Waste Management Notification"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="252dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:text="Update profile"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="252dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="123dp"
+        android:layout_height="80dp"
+        android:text="Government Notification"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_marginBottom="54dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5" />
+
+</RelativeLayout>

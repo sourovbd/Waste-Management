@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CityCleaner</string>
+    <string name="title_activity_business">BusinessActivity</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

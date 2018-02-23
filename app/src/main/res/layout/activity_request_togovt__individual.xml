@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.example.androide.citycleaner.RequestTogovt_IndividualActivity">
+
+    <TextView
+        android:id="@+id/request_govt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Request to government" />
+
+    <ImageView
+        android:layout_below="@+id/request_govt"
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/image" />
+
+
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Address"
+        android:textSize="18sp"
+        android:layout_below="@+id/image_logo" />
+
+    <EditText android:inputType="textMultiLine"
+        android:id="@+id/edittext_address"
+        android:lines="6"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:maxLines="7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/image_logo"
+        android:layout_toRightOf="@+id/tv_address"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        />
+
+    <TextView
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="Comment"
+        android:textSize="18sp"
+        android:layout_below="@+id/edittext_address" />
+
+    <EditText android:inputType="textMultiLine"
+        android:id="@+id/edittext_comment"
+        android:lines="6"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:maxLines="7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edittext_address"
+        android:layout_toRightOf="@+id/tv_address"
+        android:background="@drawable/edittext_bg"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/request_btn"
+        android:layout_centerHorizontal="true"
+        android:background="#00FF00"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_comment"
+        android:layout_marginLeft="10dp"
+        android:text="Send Request" />
+
+</RelativeLayout>
